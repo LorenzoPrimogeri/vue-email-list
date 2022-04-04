@@ -23,8 +23,8 @@
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="(email) in emails">
+        <ul class="text-center">
+            <li v-for="(email) in emails" v-if="(emails.length == 10)">
                 {{email}}
             </li>
         </ul>
